@@ -1,0 +1,26 @@
+<p>produtos-listagem works!</p>
+
+<p-table [value] = "produtos">
+   <ng-template pTemplate="header">
+    <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Preco</th>
+        <th>Descricao</th>
+        <th>Estoque</th>
+        <th>categoria</th>
+        <th>Foto</th>
+    </tr>
+   </ng-template>
+   <ng-template pTemplate="body" let-produto>
+    <tr>
+        <td>{{produto.id}}</td>
+        <td>{{produto.nome}</td>
+        <td>{{produto.descricao}}</td>
+        <td>{{produto.quantidade_estoque}}</td>
+        <td>{{produto.categoria}</td>
+        <td>{{produto.foto}}</td>
+    </tr>
+
+   </ng-template>
+</p-table>
